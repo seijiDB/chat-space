@@ -2,7 +2,6 @@
 
 |Column|Type|Option|
 |------|----|------|
-
 |name|string|null: false|
 |e-mail|string|null: false, foreign_key: true|
 |password|string|null: false, foreign_key: true|
@@ -15,7 +14,6 @@
 
 |Column|Type|Option|
 |------|----|------|
-
 |name|string|null: false|
 |menber|integer|null: false|
 
@@ -27,7 +25,6 @@
 
 |Column|Type|Option|
 |------|----|------|
-
 |message|text|null:false|
 
 ### Association
