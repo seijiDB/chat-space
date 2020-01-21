@@ -3,8 +3,8 @@
 |Column|Type|Option|
 |------|----|------|
 |name|string|null: false, index:true|
-|e-mail|string|null: false|
-|password|string|null: false|
+|e-mail|string|null: false, unique:true|
+|password|string|null: false, unique:true|
 
 ### Asosiation
 - has_many :groups_users
