@@ -16,7 +16,6 @@
 |Column|Type|Option|
 |------|----|------|
 |name|string|null: false|
-|menber|integer|null: false|
 
 ### association
 - has_many :groups_users
@@ -28,6 +27,9 @@
 |Column|Type|Option|
 |------|----|------|
 |message|text|null:false|
+|image|text|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
