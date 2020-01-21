@@ -2,13 +2,13 @@
 
 |Column|Type|Option|
 |------|----|------|
-|name|string|null: false|
-|e-mail|string|null: false, foreign_key: true|
-|password|string|null: false, foreign_key: true|
+|name|string|null: false, index:true|
+|e-mail|string|null: false|
+|password|string|null: false|
 
 ### Asosiation
 - has_many :groups_users
-- has_many :groups, through: groups_users
+- has_many :groups, through: :groups_users
 - has_many :messages
 
 ## groupsテーブル
@@ -19,7 +19,7 @@
 
 ### association
 - has_many :groups_users
-- has_many :users, through: groups_users
+- has_many :users, through: :groups_users
 - has_many :messages
 
 ## messageテーブル
@@ -28,8 +28,8 @@
 |------|----|------|
 |message|text|null:false|
 |image|text|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -39,8 +39,8 @@
 
 |Column|Type|Option|
 |------|----|------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false. foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false. foreign_key: true|
 
 ### Association
 - belongs_to :group
