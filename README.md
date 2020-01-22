@@ -26,7 +26,7 @@
 
 |Column|Type|Option|
 |------|----|------|
-|message|text|null:false|
+|message|text|
 |image|text|
 |user_id|references|null: false, foreign_key: true|
 |group_id|references|null: false, foreign_key: true|
