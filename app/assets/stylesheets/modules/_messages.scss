@@ -39,8 +39,14 @@
       width: 72px;
       line-height: 40px;
       margin-top: 28px;
-      color: $light_blue;
       border: 1px solid $light_blue;
+      a {
+        text-decoration: none;
+      }
+      &__btn {
+        color: $light_blue;
+        
+      }
     }  
   }
   &__group-messages {
