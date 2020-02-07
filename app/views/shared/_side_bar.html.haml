@@ -1,0 +1,28 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__user-name__box
+      %h3.current-user
+        seiji
+      %ul.search-icon
+        %li.list
+          = link_to "#" do
+            = icon('fa', 'edit',class: 'icon')
+        %li.list
+          = link_to "#" do
+            = icon('fa', 'cog',class: 'icon')
+  .side-bar__groups
+    .group
+      .group__name
+        旅団
+      .group__message
+        日曜日８時
+    .group
+      .group__name
+        BeeMusic
+      .group__message
+        月２回
+    .group
+      .group__name
+        やじホットコーヒー
+      .group__message
+        映画を見よう
