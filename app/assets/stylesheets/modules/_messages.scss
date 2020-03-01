@@ -53,6 +53,7 @@
     box-sizing: border-box; 
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
+    overflow: scroll;
     .message {
       padding: 35px 0 46px 40px;
       .upper-message {
@@ -106,7 +107,10 @@
       background-color: $light_blue;
       color: white;
       margin-left: 15px;
-      padding: 0 25px;
+      padding: 0 30px;
+      border: none;
+      font-size: 16px;
+      float: right;
     }
   }
 }
